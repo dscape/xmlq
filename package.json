@@ -12,15 +12,15 @@
   "dependencies": {
     "saxpath": "^0.6.1",
     "sax": "^0.6.1",
-    "debug": "^2.1.2",
-    "jscs": "^1.11.3"
+    "debug": "^2.1.2"
   },
   "bin": {
     "xmlq": "./bin/xmlq"
   },
   "devDependencies": {
     "pre-commit": "^1.0.5",
-    "jshint": "^2.6.3"
+    "jshint": "^2.6.3",
+    "jscs": "^1.11.3"
   },
   "pre-commit": [
     "jshint",
