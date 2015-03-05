@@ -6,7 +6,7 @@ Filter XML with xpath.
 
 ``` sh
 echo "<a>foo <b><c>hey</c></b></a>" | \
-  ./bin/xmlq /a | \
-  DEBUG=* ./bin/xmlq //b
+  xmlq /a | \
+  DEBUG=* xmlq //b
 ```
 
