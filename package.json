@@ -1,6 +1,6 @@
 {
   "name": "xmlq",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "filter xml in the command line with xpath",
   "main": "bin/xmlq",
   "scripts": {
