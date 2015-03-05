@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-var fs = require('fs');
+'use strict';
+
 var sax = require('sax');
 var saxpath = require('saxpath');
 var debug = require('debug')('xmlq:bin');
