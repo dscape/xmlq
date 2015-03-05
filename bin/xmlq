@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+var fs = require('fs');
+var sax = require('sax');
+var saxpath = require('saxpath');
+var debug = require('debug')('xmlq:bin');
+
+var path = process.argv[2] || '/*';
+
+debug(path);
+
+var parser  = sax.createStream(true);
+var streamer   = new saxpath.SaXPath(parser, path);
+
+streamer.on('match', function(xml) {
+  debug('found ' + xml);
+  process.stdout.write(xml);
+});
+
+var stdin = process.openStdin();
+stdin.setEncoding('utf8');
+stdin
+  .pipe(parser);

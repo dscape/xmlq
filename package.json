@@ -1,0 +1,29 @@
+{
+  "name": "xmlq",
+  "version": "0.0.0",
+  "description": "filter xml in the command line with xpath",
+  "main": "bin/xmlq",
+  "scripts": {
+    "jshint": "jshint bin/*.js",
+    "codestyle": "jscs -p google bin/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "saxpath": "^0.6.1",
+    "sax": "^0.6.1",
+    "debug": "^2.1.2",
+    "jscs": "^1.11.3"
+  },
+  "bin": {
+    "xmlq": "./bin/xmlq"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.0.5",
+    "jshint": "^2.6.3"
+  },
+  "pre-commit": [
+    "jshint",
+    "codestyle"
+  ]
+}
