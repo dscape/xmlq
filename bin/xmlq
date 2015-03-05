@@ -6,7 +6,6 @@ var saxpath = require('saxpath');
 var debug = require('debug')('xmlq:bin');
 
 var path = process.argv[2] || '/*';
-
 debug(path);
 
 var parser  = sax.createStream(true);
